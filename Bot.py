@@ -34,7 +34,6 @@ def callback_inline(call):
 
 def ask_que(id):
     global users
-    print(users)
     cur_que = users[id]
     next_que = que[cur_que][1]
     if next_que: #проверяю, не конец ли квеста
