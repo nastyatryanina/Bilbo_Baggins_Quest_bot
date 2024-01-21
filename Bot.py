@@ -13,7 +13,6 @@ for q in que.keys():
         if que[child][2]:
             but_for_ques = {que[i][0]: {'callback_data': f"{i}"} for i in que[q][1]}
             buttons[q] = telebot.util.quick_markup(but_for_ques, row_width=1)
-print(buttons)
 
 @bot.message_handler(commands=['start'])
 def start(message):
@@ -37,8 +36,6 @@ def ask_que(id):
     global users
     print(users)
     cur_que = users[id]
-    '''if not que[cur_que][2]:
-        bot.send_message(int(id), text=que[cur_que][0]) #Если этот этап не кнопка, то вывожу текст на ней'''
     next_que = que[cur_que][1]
     if next_que: #проверяю, не конец ли квеста
         if cur_que in buttons.keys(): # если следующий этап кнопки, то вывожу клаву
@@ -48,7 +45,6 @@ def ask_que(id):
             users[id] = next_que[0]
             ask_que(id)
         else: # иначе текст на ней
-            print(next_que, "я здесь")
             bot.send_message(int(id), text=que[next_que[0]][0])
             users[id] = next_que[0]
             ask_que(id)

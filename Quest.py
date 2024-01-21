@@ -26,14 +26,14 @@ que = {1: ["Жил-был Бильбо в своей просторной и к�
        26: ["Бильбо вернулся домой героем со своей долей сокровищ.", [], False]
        }
 photos = {
-       1: "images\\home.png",
-       4: "images\\gendalf.png",
-       7: "images\\gnomes.png",
-       9: "images\\trolles.png",
-       13: "images\\cave.png",
-       16: "images\\bridge.png",
-       17: "images\\gollum.png",
-       20: "images\\dragon.png",
-       24: "images\\striker.png",
-       26: "images\\bilbo.png"
+       1: "images/home.png",
+       4: "images/gendalf.png",
+       7: "images/gnomes.png",
+       9: "images/trolles.png",
+       13: "images/cave.png",
+       16: "images/bridge.png",
+       17: "images/gollum.png",
+       20: "images/dragon.png",
+       24: "images/striker.png",
+       26: "images/bilbo.png"
 }
